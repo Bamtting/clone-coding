@@ -37,6 +37,14 @@ body{
     /* 글자 초과시 자동 줄바꿈 */
     word-break: break-all;
 }
+/* 공통 클래스 */
+.container{
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 /* 레이아웃 */
 .wrap{
     position: relative;
@@ -180,4 +188,39 @@ body{
 .lang-list >li:last-child::after{
     content: none;
 }
-
+/* 비주얼 */
+.visual{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 910px;
+    background-position-x: 50%;
+    background: url("../images/img_visual01.png")no-repeat center fixed;
+    background-size: cover;
+    margin-top: 80px;
+}
+.visual-inner{
+    position: relative;
+    display: block;
+    height: 100%;
+    /* 마진 공간 만들기 */
+    padding-top: 1px;
+}
+.visual-slogan{
+    position: relative;
+    display: block;
+    font-size: 70px;
+    color: #fff;
+    font-weight: 500;
+    /* 마진 입력안될시 패딩 1px주기 */
+    margin-top: 245px;
+}
+.visual-slogan::before{
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: -45px;
+    width: 60px;
+    height: 5px;
+    background-color: #ed1c24;
+}
